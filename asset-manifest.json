@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sugeshan19/portfolio.git/static/css/main.905d00c0.css",
+    "main.js": "/Sugeshan19/portfolio.git/static/js/main.2f08590f.js",
+    "static/js/453.ececc0a5.chunk.js": "/Sugeshan19/portfolio.git/static/js/453.ececc0a5.chunk.js",
+    "index.html": "/Sugeshan19/portfolio.git/index.html",
+    "main.905d00c0.css.map": "/Sugeshan19/portfolio.git/static/css/main.905d00c0.css.map",
+    "main.2f08590f.js.map": "/Sugeshan19/portfolio.git/static/js/main.2f08590f.js.map",
+    "453.ececc0a5.chunk.js.map": "/Sugeshan19/portfolio.git/static/js/453.ececc0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.905d00c0.css",
+    "static/js/main.2f08590f.js"
+  ]
+}
