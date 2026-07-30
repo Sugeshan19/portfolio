@@ -46,7 +46,8 @@ export default function Banner(): React.JSX.Element {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6"
+      className="min-h-screen flex items-center justify-center pt-28 sm:pt-32 px-4 sm:px-6"
+      style={{ scrollMarginTop: '7rem' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center ">
