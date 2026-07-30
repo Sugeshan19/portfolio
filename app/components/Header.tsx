@@ -55,7 +55,7 @@ export default function Header(): React.JSX.Element {
   }, [pathname]);
 
   const navClass = (id: string) =>
-    `px-4 py-2 rounded-md text-sm transition-all duration-300 ${
+    `whitespace-nowrap px-3 py-2 rounded-md text-xs sm:text-sm transition-all duration-300 ${
       active === id
         ? "bg-black text-purple-400 border border-purple-500/60 shadow-[0_0_14px_rgba(168,85,247,0.6)]"
         : "text-white hover:text-purple-400"
@@ -66,19 +66,19 @@ export default function Header(): React.JSX.Element {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#110720]/80 backdrop-blur-sm border-b border-white/10">
       <nav className="px-6 py-4">
-        <div className="container mx-auto max-w-6xl flex items-center justify-between">
+        <div className="container mx-auto max-w-6xl flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <Link href="/">
             <Image
               src="/logo/image.png"
               alt="Logo"
               width={192}
               height={115}
-              className="-rotate-6"
+              className="-rotate-6 w-28 sm:w-auto"
               style={{ width: "auto", height: "auto" }}
             />
           </Link>
 
-          <ul className="flex items-center gap-4">
+          <ul className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
             <li>
               <Link href={sectionHref("home")} className={navClass("home")} onClick={() => setActive("home")}>
                 Home
@@ -90,6 +90,11 @@ export default function Header(): React.JSX.Element {
               </Link>
             </li>
             <li>
+              <Link href={sectionHref("achievements")} className={navClass("achievements")} onClick={() => setActive("achievements")}>
+                Achievements
+              </Link>
+            </li>            
+            <li>
               <Link href={sectionHref("about")} className={navClass("about")} onClick={() => setActive("about")}>
                 Skills
               </Link>
@@ -97,11 +102,6 @@ export default function Header(): React.JSX.Element {
             <li>
               <Link href={sectionHref("lab")} className={navClass("lab")} onClick={() => setActive("lab")}>
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link href={sectionHref("achievements")} className={navClass("achievements")} onClick={() => setActive("achievements")}>
-                Achievements
               </Link>
             </li>
             <li>

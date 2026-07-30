@@ -68,11 +68,11 @@ export default function CertificatesPage(): React.JSX.Element {
     <main className="min-h-screen bg-[#110720] text-white">
       <Header />
 
-      <section className="pt-28 pb-16 px-6">
+      <section className="scroll-mt-28 pt-24 pb-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between mb-12">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between mb-10 sm:mb-12">
             <div className="max-w-2xl space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
                 Certificates and achievements in one place.
               </h1>
             </div>
@@ -85,13 +85,13 @@ export default function CertificatesPage(): React.JSX.Element {
             </Link>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {certificates.map((certificate, index) => (
               <ScrollPop key={certificate.title} delay={index * 0.06}>
                 <article
                   className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm"
                 >
-                  <div className="relative aspect-[4/3] bg-[#0a0712] p-4">
+                  <div className="relative aspect-[4/3] bg-[#0a0712] p-3 sm:p-4">
                     <div className="relative h-full w-full overflow-hidden rounded-2xl border border-white/10 bg-black/30">
                       <Image
                         src={certificate.image}
@@ -103,9 +103,9 @@ export default function CertificatesPage(): React.JSX.Element {
                     </div>
                   </div>
 
-                  <div className="flex items-start justify-between gap-4 border-t border-white/10 px-5 py-4">
+                  <div className="flex items-start justify-between gap-4 border-t border-white/10 px-4 sm:px-5 py-4">
                     <div>
-                      <h2 className="text-lg font-semibold text-white">
+                      <h2 className="text-base sm:text-lg font-semibold text-white">
                         {certificate.title}
                       </h2>
                       <p className="text-sm text-white/65">{certificate.issuer}</p>

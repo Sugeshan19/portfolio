@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["Full-Stack Developer","MERN Stack Developer","Frontend Developer","React Developer","Backend Developer","Web Designer","Web Developer","Portfolio","Technology Enthusiast","Computer Science Student",];
+  const texts = ["Full-Stack Developer","MERN Stack Developer","Frontend Developer","React Developer","Backend Developer","Web Designer","Web Developer","Technology Enthusiast","Computer Science Student",];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -46,27 +46,27 @@ export default function Banner(): React.JSX.Element {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-20 px-6"
+      className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center ">
           {/* Left side - Text content */}
           {/* Right side - Character image */}
           <div className="flex justify-center lg:justify-end relative w-full lg:w-auto">
-            <div className="relative top-10">
+            <div className="relative mt-8 sm:mt-10">
               {/* Mobile: Hello text positioned on top of image */}
-              <div className="lg:hidden  -top-150 z-10">
+              <div className="lg:hidden absolute -top-8 sm:-top-6 left-1/2 z-20 -translate-x-1/2 px-2">
                 <div className="relative inline-block ">
                   <Image
                     src="/assets/arrow.png"
                     alt="Arrow pointer"
                     width={80}
                     height={80}
-                    className="absolute top-5 rotate-z-280"
+                    className="absolute -top-1 left-0 w-12 sm:w-16 rotate-z-280"
                     style={{ width: "auto", height: "auto" }}
                   />
                   <div className="relative">
-                    <p className="text-white text-lg whitespace-nowrap">
+                    <p className="text-white text-sm sm:text-base whitespace-nowrap">
                       Hello! I Am{" "}
                       <span className="text-purple-400">Sugeshan S</span>
                     </p>
@@ -79,8 +79,7 @@ export default function Banner(): React.JSX.Element {
                 alt="Sugeshan S - Full-Stack Developer "
                 width={300}
                 height={300}
-                className=" max-w-md absolute"
-                style={{ width: "auto", height: "auto" }}
+                className="profile-image absolute"
                 priority
               />
               <Image
@@ -115,7 +114,7 @@ export default function Banner(): React.JSX.Element {
             </div>
             <div className="">
               <p className="text-2xl">A Full-Stack Developer who </p>
-              <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl tracking-tight lg:text-7xl font-semibold text-white leading-tight">
                 Reads errors
                 <br /> like{" "}
                 <span className="relative inline-block">
@@ -133,18 +132,19 @@ export default function Banner(): React.JSX.Element {
           </div>
         </div>
         <div className="space-y-3 pt-15 text-center lg:text-left">
-          <p className="text-5xl text-white font-bold">
+          <p className="text-3xl sm:text-4xl lg:text-5xl text-white font-bold">
             I&apos;m a {displayedText}
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Freelancer</span>
-            <span>💻</span >
+            <span>Founder of <b>NexDen Solutions</b></span>
           </p>
-          <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            Full Stack Developer with hands-on production experience building and scaling MERN applications serving 2,800+ active users. 
-            Progressed from intern to technical ownership within a startup environment, delivering measurable performance improvements 
-            through API optimization, async architecture, and cross-functional Agile collaboration. Strong foundation in React, Node.js, Express, and MongoDB with a focus on clean architecture and measurable delivery.
+          <p className="text-base sm:text-lg text-white/80 max-w-2xl mt-8 lg:mt-15 mx-auto lg:mx-0">
+          I am Sugeshan, <b>Founder & CEO of NexDen</b>, driven by a passion for transforming innovative ideas into impactful technologies.
+          At NexDen, I focus on building intelligent solutions across Artificial Intelligence, Software Engineering, Cloud Computing, IoT, Automation, and Robotics—creating products that solve real-world challenges and shape the future.
+          Beyond technology, I am passionate about entrepreneurship, leadership, and mentoring aspiring innovators. My vision is to establish NexDen as a globally recognized technology company known for innovation, engineering excellence, and meaningful impact.
+          <b>Building the Home of Next-Generation Innovation.</b>
+
           </p>
         </div>
       </div>

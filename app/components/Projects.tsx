@@ -19,9 +19,9 @@ const featuredProjects: Project[] = [
   },
   {
     id: 2,
-    title: "Namma Kadai - Full-Stack E-commerce Web Application",
-    description: "Namma Kadai is a full-stack e-commerce web application built to provide a clean, user-friendly online shopping experience with category-based product browsing and seamless cart functionality. The platform features a modern React frontend with responsive UI, dynamic product filtering (such as electronics, shoes, clothes, and mobiles), and an intuitive navigation system. On the backend, it integrates Node.js and database support to manage products, users, and orders efficiently. The project focuses on performance, scalability, and usability, demonstrating real-world full-stack development practices including routing, state management, API integration, and modular component design.",
-   link: "https://sugeshan19.github.io/NammaKadai/",
+    title: "Aquaforge Robotics",
+    description: "Aqua Forge Robotics is Designed and developed the official website for Aqua Forge Robotics, delivering a modern, responsive, and high-performance digital platform that showcases the company's expertise in underwater robotics and advanced engineering solutions.The project focused on creating an intuitive user experience, seamless navigation, optimized performance, and a professional brand identity while ensuring responsiveness across all devices. From UI/UX design to deployment and ongoing maintenance, the website was engineered to strengthen the company's online presence and effectively communicate its innovative capabilities.Tech Stack: WordPress, HTML, CSS, JavaScript, Responsive Web Design, SEO Optimization",
+   link: "https://aquaforgerobotics.com/",
     image: "/projects/2.png",
   },
   
@@ -29,7 +29,7 @@ const featuredProjects: Project[] = [
 
 export default function Projects(): React.JSX.Element {
   return (
-    <section id="lab" className="py-20 px-6">
+    <section id="lab" className="scroll-mt-28 py-20 px-6">
       <div className="container mx-auto max-w-7xl">
         {featuredProjects.map((project, index) => {
           const isEven = index % 2 === 1;

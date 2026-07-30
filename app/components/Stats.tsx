@@ -17,7 +17,7 @@ export default function Stats(): React.JSX.Element {
             </div>
             <div>
               <p className="text-6xl font-bold text-white lg:text-7xl [font-family:Algerian,serif]">
-                <CountUp to={17} duration={2.2} delay={0.15} />+
+                <CountUp to={27} duration={2.1} delay={0.15} />+
               </p>
               <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/65">
                 Happy Clients

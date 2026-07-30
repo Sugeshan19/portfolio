@@ -11,7 +11,7 @@ interface ExperienceCard {
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "Senior Developer — Intecalic Web Service (IWS)",
+    title: "Full Stack Developer — Intecalic Web Service (IWS)",
     description: "Led development of scalable web applications with a strong focus on backend architecture, performance, and reliability.\n\nBuilt REST APIs, role-based access control, and optimized database structures to improve scalability and response times.\n\nWorked across deployment and maintenance to deliver stable, production-ready systems.\n\nTech Stack: Django, Python, PostgreSQL, MongoDB, Node.js, Express.js, React, Bootstrap, JavaScript, Docker, AWS/Vercel.",
     icon: "/cards/card-1.png",
   },
@@ -37,7 +37,7 @@ const experienceCards: ExperienceCard[] = [
 
 export default function Experience(): React.JSX.Element {
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="scroll-mt-28 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           Work Experience
@@ -45,13 +45,13 @@ export default function Experience(): React.JSX.Element {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card, index) => (
             <ScrollPop key={card.id} delay={index * 0.08}>
-              <div className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950  backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-center gap-4">
-                <div className="mb-4 ">
+              <div className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950 backdrop-blur-sm rounded-xl p-5 sm:p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex flex-col sm:flex-row items-center gap-4">
+                <div className="shrink-0 mb-2 sm:mb-4 ">
                   <Image
                     src={card.icon}
                     alt={card.title}
-                    width={160}
-                    height={160}
+                    width={120}
+                    height={120}
                     className="object-contain"
                   />
                 </div>
@@ -68,7 +68,7 @@ export default function Experience(): React.JSX.Element {
           ))}
         </div>
 
-        <div className="mt-20" id="achievements">
+        <div className="mt-20 scroll-mt-28" id="achievements">
           <ScrollPop className="mb-12" delay={0.02}>
             <h2 className="text-4xl lg:text-5xl font-bold text-white text-center">
               Achievements
@@ -76,8 +76,8 @@ export default function Experience(): React.JSX.Element {
           </ScrollPop>
           
           <ScrollPop className="mx-auto max-w-6xl" delay={0.04}>
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-4 sm:p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8 items-center">
               {/* Image Section */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-black/30">
                 <Image
@@ -96,7 +96,7 @@ export default function Experience(): React.JSX.Element {
                 </p>
                 
                 <p className="text-white/90 text-lg lg:text-xl font-semibold italic">
-                  "முயல் வெல்லும், ஆமைவும் வெல்லும், ஆனால் முயலாமை வெல்லாது."
+                  "முயலும் வெல்லும், ஆமையும் வெல்லும், ஆனால் முயலாமை வெல்லாது."
                 </p>
                 
                 <p className="text-white/80 text-sm lg:text-base leading-relaxed">
@@ -129,8 +129,8 @@ export default function Experience(): React.JSX.Element {
           </ScrollPop>
 
           <ScrollPop className="mx-auto mt-8 max-w-6xl" delay={0.08}>
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-4 sm:p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8 items-center">
               {/* Image Section */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-black/30 order-2 lg:order-1">
                 <Image
@@ -178,8 +178,8 @@ export default function Experience(): React.JSX.Element {
           </ScrollPop>
 
           <ScrollPop className="mx-auto mt-8 max-w-6xl" delay={0.12}>
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-4 sm:p-6 lg:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8 items-center">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-black/30">
                 <Image
                   src="https://res.cloudinary.com/dtpl599ko/image/upload/v1776332878/nit_dnf5ly.png"

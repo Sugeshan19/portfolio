@@ -24,6 +24,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,4 +38,11 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.profile-image {
+  width: clamp(190px, 55vw, 300px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
 }

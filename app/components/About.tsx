@@ -46,7 +46,7 @@ export default function About(): React.JSX.Element {
   ];
 
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="scroll-mt-28 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <ScrollPop className="mb-14 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white">Skills &amp; Capabilities</h2>
