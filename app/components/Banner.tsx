@@ -53,9 +53,9 @@ export default function Banner(): React.JSX.Element {
           {/* Left side - Text content */}
           {/* Right side - Character image */}
           <div className="flex justify-center lg:justify-end relative w-full lg:w-auto">
-            <div className="relative mt-8 sm:mt-10">
+            <div className="relative mt-8 sm:mt-10 flex flex-col items-center">
               {/* Mobile: Hello text positioned on top of image */}
-              <div className="lg:hidden absolute -top-8 sm:-top-6 left-1/2 z-20 -translate-x-1/2 px-2">
+              <div className="lg:hidden relative z-30 mb-4 px-2">
                 <div className="relative inline-block ">
                   <Image
                     src="/assets/arrow.png"
@@ -74,23 +74,25 @@ export default function Banner(): React.JSX.Element {
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
                 </div>
               </div>
-              <Image
-                src="/assets/me.png"
-                alt="Sugeshan S - Full-Stack Developer "
-                width={300}
-                height={300}
-                className="profile-image absolute"
-                priority
-              />
-              <Image
-                src="/assets/me-glow.png"
-                alt="Sugeshan S - Full-Stack Developer "
-                width={300}
-                height={300}
-                className="max-w-md "
-                style={{ width: "auto", height: "auto" }}
-                priority
-              />
+
+              <div className="relative w-fit">
+                <Image
+                  src="/assets/me-glow.png"
+                  alt="Sugeshan S - Full-Stack Developer "
+                  width={340}
+                  height={340}
+                  className="glow-image"
+                  priority
+                />
+                <Image
+                  src="/assets/me.png"
+                  alt="Sugeshan S - Full-Stack Developer "
+                  width={300}
+                  height={300}
+                  className="profile-image z-40"
+                  priority
+                />
+              </div>
             </div>
           </div>
           <div className="flex-1 space-y-6 text-center lg:text-left">
